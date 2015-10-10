@@ -5,10 +5,12 @@
 
 function lighthbox( container )  {
 	var self = this;
-
+	
+	// Initialize object
 	self.init = function() {
 
-	}	
+	}
+
 	// Initialize object
 	self.init();
 }
