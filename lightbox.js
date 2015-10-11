@@ -27,6 +27,7 @@ function lighthbox( container )  {
 
 		// Append placeholder for image title(description)
 		var title = $('<h3>');
+		title.text('Lightbox Gallery Images');
 		overlay.append(title);
 
 		// append figure 
@@ -35,7 +36,11 @@ function lighthbox( container )  {
 
 		// Append img to figure
 		var image = $('<img>');
+		image.addClass('load')
 		image.attr('src','images/350.GIF');
+		image
+			.css('width','64px')
+			.css('height','64px');
 		figure.append(image);
 
 		// Append lightbox controls (next,prev,close)
