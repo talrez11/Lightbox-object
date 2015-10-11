@@ -7,11 +7,14 @@ function lighthbox( container )  {
 	var self = this;
 
 	self.container = container;
+	self.container_images = container.find('img');
 
 
 	// Initialize object
 	self.init = function() {
 		self.lightbox_container();
+		console.log(self.container_images);
+
 	}
 
 	// Create light box container element
