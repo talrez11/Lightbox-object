@@ -31,6 +31,10 @@ div#overlay {
 	transition:all 0.5s;
 }
 
+div#overlay.open {
+	top:0%;
+}
+
 div#overlay h3 {
 	display: block;
 	text-align: center;
@@ -49,17 +53,10 @@ div#overlay figure {
 	height: 500px;
 	border:5px solid white;
 	position:relative;
+	overflow: hidden;
 }
 
-div#overlay figure img.load {
-	position: absolute;
-	top: 50%;
-	margin-top: -32px;
-	left: 50%;
-	margin-left: -32px;
-}
-
-div#overlay figure img {
+div#overlay figure img{
 	width: 100%;
 	height: auto;
 }
