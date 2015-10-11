@@ -6,14 +6,51 @@
 function lighthbox( container )  {
 	var self = this;
 
+	self.container = container;
+
+
 	// Initialize object
 	self.init = function() {
-
+		self.lightbox_container();
 	}
 
 	// Create light box container element
 	self.lightbox_container = function() {
+		// Create lightbox div container
+		var overlay = $('<div>');
+		overlay.attr('id','overlay')
+		// Append light box container to document body
+		$('body').append(overlay);
 
+		// Append placeholder for image title(description)
+		var title = $('<h3>');
+		overlay.append(title);
+
+		// append figure 
+		var figure = $('<figure>');
+		overlay.append(figure);
+
+		// Append img to figure
+		var image = $('<img>');
+		image.attr('src','images/350.GIF');
+		figure.append(image);
+
+		// Append lightbox controls (next,prev,close)
+		 // close button
+		var close_btn = $('<a>');
+		close_btn.attr('href','javascript:void(0)');
+		close_btn.addClass('close');
+		overlay.append(close_btn);
+		 // next button
+		var next = $('<a>');
+		next.attr('href','javascript:void(0)');
+		next.addClass('next');
+		overlay.append(next);
+		 // prev button
+		var prev = $('<a>');
+		prev.attr('href','javascript:void(0)');
+		prev.addClass('prev');
+		overlay.append(prev);
 	}
 
 	// Finction for handling item click 
