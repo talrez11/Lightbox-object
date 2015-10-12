@@ -3,6 +3,7 @@
 	@ param object - Jquery element
 */
 // Added a fucking comment
+// Added Second comment
 function lighthbox( container )  {
 	var self = this;
 
