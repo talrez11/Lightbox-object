@@ -2,7 +2,7 @@
 	object for creating images lightbox	
 	@ param object - Jquery element
 */
-
+// Added a fucking comment
 function lighthbox( container )  {
 	var self = this;
 
